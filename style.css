@@ -1,0 +1,45 @@
+.masterhead{
+    background-size: cover;
+    min-height: 90vh;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+}
+.masterfont{
+    font-size: 3rem;
+    font-variant:normal;
+    font-family: 'Comic Neue', cursive;
+    
+}
+.masterfont2{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+.color-overlay{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.2);
+}
+@media (max-width: 768px){
+    .masterhead{
+        min-height: 30vh;
+    }
+    .masterfont{
+        font-size: calc(1.2 * 3.3vw);
+    }
+    .masterfont2{
+        font-size: calc(0.6 * 3.3vw);
+    }
+}
+.foot{
+    border: 1px solid;
+    background-color: #3e526e;
+    clear: both;
+    height: 100px;
+    margin-top: 50px;
+}
+.va{
+    background-color: aliceblue;
+    padding: 20px;
+}
