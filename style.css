@@ -6,7 +6,7 @@
     min-height: 92vh;
     position: relative;
     color: white;
-    text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+    text-shadow: 2px 2px 2px rgba(0,0,0,.3);
 }
 .masterfont{
     font-size: 3rem;
@@ -48,15 +48,29 @@
     /* border: 1px solid; */
     background-color: #99bdef;
     clear: both;
+   
     /* height: 100px;
     margin-top: 50px; */
 }
 .va{
-    margin: auto;
-    padding: 20px;
-    max-width: fit-content;
+    
+    margin-top: 20px;
+    padding: 25px;
+    
+}
+.orientation{
+padding-left: 100px;
+padding-right: 50px;
+}
+.upwork{
+padding-left: 100px;
 }
 .about{
+    padding-top: 70px;
+    max-width: fit-content;
+    margin: auto;
+}
+.team{
     max-width: fit-content;
     margin: auto;
     padding: 100px;
@@ -81,4 +95,7 @@ a:visited {
   }
   .footer-link-social{
     display: inline-block;
+  }
+  .alumni{
+    color: #3e526e;
   }

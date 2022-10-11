@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursenetic</title>
+    <link rel="icon" href="images/cos2.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" style="background-color: #3e526e;">
+            <div class="container-fluid">
+                <img src="images/cos (1).png" alt="mainlogo"width="170" height="" class="mx-3">
+                <span class="navbar-brand mb-0 h1 text-primary"></span>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav justify-content-center ms-auto mb-2 mb-lg-0 mx-5">
+                    <li class="nav-item">
+                      <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Services
+                        </a>
+                        <ul class="dropdown-menu" >
+                          <li><a class="dropdown-item" style="color: #3e526e;" href="index.html#start">VA Program</a></li>
+                          <li><a class="dropdown-item" style="color: #3e526e;" href="index.html#masterclass">Master Class</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" style="color: #3e526e;" href="#">Freelancer</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Register
+                        </a>
+                        <ul class="dropdown-menu" >
+                          <li><a class="dropdown-item" style="color: #3e526e;" href="varegistration.html">VA Program</a></li>
+                          <li><a class="dropdown-item" style="color: #3e526e;" href="register.html">Master Class</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="#contact">Contact</a>
+                    </li>
+                  </ul>
+                  </div>
+                  <!-- <form class="d-flex" role="search">
+                    <input class="form-control me-2 mx-5" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                  </form> -->
+                </div>
+          </nav>
+    </header>
+      <main style="background-color: #f5f5f5;">
+        <div class="container justify-content-center align-items-center">
+            <div class="row p-5">
+                <div class="col">
+                    <form onsubmit="sendRegDetails(); reset(); return false;">
+                        <fieldset>
+                          <legend class="my-3 fs-3"><b>Fill out this form to register for the Masterclass Program</b></legend>
+                          <p class="mx-2">(Please note that you are required to fill out all fields)</p>
+                          <div class="mb-3">
+                            <label for="fullName" class="form-label fs-5"><b>Full Name</b></label>
+                            <input type="text" id="fullNameInput" class="form-control" placeholder="Enter first and last name">
+                          </div>
+                          <div class="mb-3">
+                            <label for="email" class="form-label fs-5"><b>Email Address</b></label>
+                            <input type="email" id="email" class="form-control" placeholder="example@mail.com">
+                          </div>
+                          <div class="mb-3">
+                            <label for="phoneNumber" class="form-label fs-5"><b>Phone Number</b></label>
+                            <input type="tel" id="phonenumber" class="form-control" placeholder="include +, country code and last ten digit">
+                          </div>
+                          <div class="mb-3">
+                            <label for="masterClassSelect" class="form-label fs-5"><b>Masterclass Choice</b></label>
+                            <p><b>Select the class you wish to take</b></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="upwork">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Upwork
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="fiverr" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  Fiverr
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="linkedin" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  LinkedIn
+                                </label>
+                              </div>
+                          </div>
+                          <div class="mb-3">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="terms">
+                              <label class="form-check-label" for="disabledFieldsetCheck">
+                                I agree to Terms & Conditions
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="promo">
+                              <label class="form-check-label" for="disabledFieldsetCheck">
+                                Register me for Promotions & Newsletters
+                              </label>
+                            </div>
+                          </div>
+                          <div class="row justify-content-center align-items-center">
+                            <div class="col-6">
+                                <button type="submit" class="btn btn-primary mx-2 rounded">Submit</button>
+                                <button type="reset" class="btn btn-primary rounded">Reset</button>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </form>
+                </div>
+            </div>
+        </div>
+        <div class="container justify-content-center align-items-center text-center about contact bg-white rounded p-3" style="color:#3e526e;" id="contact">
+            <h2>Have questions? Speak to an Advisor</h2>
+            <p class="my-2" style="color:#3e526e;">OR Call<b> 0900000000</b></p>
+        </div>
+        <br>
+      </main>
+    <footer class="foot">
+     <div class="container justify-content-center align-items-center text-start">
+        <div class="row">
+            <div class="col-lg-3 my-5">
+                <h4 class="fs-5"><b>Contact Us</b></h4>
+                <div class="contact-info">
+                    <address class="text-dark">
+                        Lagos State,<br> Nigeria.
+                    </address>
+                        <span><b class="text-dark"> Phone:  </b> 0900000000</span> <br>
+                        <span><b class="text-dark"> Email: </b> coursenetic@gmail.com</span>
+                </div>
+                
+            </div>
+            <div class="col-lg-3 my-5">
+                <h4 class="fs-5"><b>Useful Link</b></h4>
+                <div class="footer-link">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about-us">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 my-5">
+                <h4 class="fs-5"><b>Our Services</b></h4>
+                <div class="footer-link">
+                    <ul>
+                        <li>
+                            <a href="#start">VA Program</a>
+                        </li>
+                        <li>
+                            <a href="#masterclass">Masterclass</a>
+                        </li>
+                        <li>
+                            <a href="#">Freelancer</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 my-5">
+                <h4 class="fs-5"><b>Our Social Network</b></h4>
+                <p>We are Everywhere. Connect with us via social media.</p>
+                <div class="footer-link-social">
+                    <div>
+                        <a href="https://www.linkedin.com/in/coursenetic/">
+                            <img alt="Qries" src="./linkedin.png"
+                            width="45" height="44">
+                         </a>
+                        <a href="https://www.linkedin.com/in/coursenetic/">
+                            <img alt="Qries" src="./linkedin.png"
+                            width="45" height="44">
+                         </a>
+                        <a href="https://www.linkedin.com/in/coursenetic/">
+                            <img alt="Qries" src="./linkedin.png"
+                            width="45" height="44">
+                         </a>
+                        <a href="https://www.linkedin.com/in/coursenetic/">
+                            <img alt="Qries" src="./linkedin.png"
+                            width="45" height="44">
+                         </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <div class="container justify-content-center align-items-center text-center">
+        
+        Copyright 2022 by Coursenetic. All Rights Reserved. <br>
+                Coursenetic is Designed by <a href="https://wa.link/i1bgf2"><b>Fugazi</b></a> <br>
+                <img src="./images/bannerlogo2.png" class="img-fluid my-2 rounded" width="50" alt="">
+     </div>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendRegDetails(){
+        Email.send({
+          SecureToken:"aef1ca43-efcb-4d81-be58-4783fd34d32a",
+          To : 'coursenetic@gmail.com',
+          From : document.getElementById("email").value,
+          Subject : "New Masterclass Registration",
+          Body : "Name: " + document.getElementById("fullNameInput").value 
+            + "<br> Email: " + document.getElementById("email").value + "<br> Phone Number: " + document.getElementById("tel").value + 
+            "<br> Masterclass Choice: " + document.getElementById("upwork").value + "<br> Masterclass Choice: " + document.getElementById("fiverr").value +
+            "<br> Masterclass Choice: " + document.getElementById("linkedin").value + "<br> Terms & Conditions: " + document.getElementById("terms").value
+            + "<br> Promotional Emails: " + document.getElementById("promo").value
+      }).then(
+        message => alert("Registration Submitted Successfully!")
+      );
+      }
+    </script>
+</body>
+</html>
