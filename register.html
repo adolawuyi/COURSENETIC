@@ -72,7 +72,7 @@
                           <p class="mx-2">(Please note that you are required to fill out all fields)</p>
                           <div class="mb-3">
                             <label for="fullName" class="form-label fs-5"><b>Full Name</b></label>
-                            <input type="text" id="fullNameInput" class="form-control" placeholder="Enter first and last name">
+                            <input type="text" id="fullName" class="form-control" placeholder="Enter first and last name">
                           </div>
                           <div class="mb-3">
                             <label for="email" class="form-label fs-5"><b>Email Address</b></label>
@@ -85,26 +85,30 @@
                           <div class="mb-3">
                             <label for="masterClassSelect" class="form-label fs-5"><b>Masterclass Choice</b></label>
                             <p><b>Select the class you wish to take</b></p>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="upwork">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                  Upwork
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="fiverr" checked>
-                                <label class="form-check-label" for="flexCheckChecked">
-                                  Fiverr
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="linkedin" checked>
-                                <label class="form-check-label" for="flexCheckChecked">
-                                  LinkedIn
-                                </label>
-                              </div>
-                          </div>
                           <div class="mb-3">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="upwork">
+                              <label class="form-check-label" for="disabledFieldsetCheck">
+                                Upwork
+                              </label>
+                            </div>
+                          <div class="mb-3">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="fiverr">
+                              <label class="form-check-label" for="disabledFieldsetCheck">
+                                Fiverr
+                              </label>
+                            </div>
+                          <div class="mb-3">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="linkedin">
+                              <label class="form-check-label" for="disabledFieldsetCheck">
+                                LinkedIn
+                              </label>
+                            </div>
+                            <br>
+                          <div class="mb-3">
+                            <label for="masterClassSelect" class="form-label fs-5"><b>Terms and Promotions</b></label>
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox" id="terms">
                               <label class="form-check-label" for="disabledFieldsetCheck">
@@ -114,14 +118,13 @@
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox" id="promo">
                               <label class="form-check-label" for="disabledFieldsetCheck">
-                                Register me for Promotions & Newsletters
+                                Promotions & Newsletters (Optional)
                               </label>
                             </div>
                           </div>
                           <div class="row justify-content-center align-items-center">
                             <div class="col-6">
                                 <button type="submit" class="btn btn-primary mx-2 rounded">Submit</button>
-                                <button type="reset" class="btn btn-primary rounded">Reset</button>
                             </div>
                           </div>
                         </fieldset>
@@ -216,18 +219,24 @@
     <script>
       function sendRegDetails(){
         Email.send({
-          SecureToken:"aef1ca43-efcb-4d81-be58-4783fd34d32a",
-          To : 'coursenetic@gmail.com',
-          From : document.getElementById("email").value,
+          SecureToken : "aef1ca43-efcb-4d81-be58-4783fd34d32a",
+          To : 'adolawuyi@gmail.com',
+          From : 'adolawuyi@gmail.com',
           Subject : "New Masterclass Registration",
-          Body : "Name: " + document.getElementById("fullNameInput").value 
-            + "<br> Email: " + document.getElementById("email").value + "<br> Phone Number: " + document.getElementById("tel").value + 
-            "<br> Masterclass Choice: " + document.getElementById("upwork").value + "<br> Masterclass Choice: " + document.getElementById("fiverr").value +
-            "<br> Masterclass Choice: " + document.getElementById("linkedin").value + "<br> Terms & Conditions: " + document.getElementById("terms").value
-            + "<br> Promotional Emails: " + document.getElementById("promo").value
+          Body : "Name: " + document.getElementById("fullName").value 
+           + "<br> Email: " + document.getElementById("email").value
+           + "<br> Phone Number: " + document.getElementById("phonenumber").value
+           + "<br> Masterclass Choice: " + document.getElementById("upwork").value 
+           + "<br> Masterclass Choice: " + document.getElementById("fiverr").value 
+           + "<br> Masterclass Choice: " + document.getElementById("linkedin").value
+           + "<br> Terms & Conditions: " + document.getElementById("terms").value
+           + "<br> Promotional Emails: " + document.getElementById("promo").value
+           
+          
       }).then(
         message => alert("Registration Submitted Successfully!")
       );
+    
       }
     </script>
 </body>

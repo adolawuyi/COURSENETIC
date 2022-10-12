@@ -66,7 +66,7 @@
         <div class="container justify-content-center align-items-center">
             <div class="row p-5">
                 <div class="col">
-                    <form>
+                    <form onsubmit="vaRegDetails(); reset(); return false;">
                         <fieldset>
                           <legend class="my-3 fs-3"><b>Fill out this form to register for the Virtual Assistant Program</b>
                           </legend>
@@ -89,7 +89,7 @@
                           </div>
                           <div class="mb-3">
                             <label for="disabledSelect" class="form-label"><b>How did you hear about us</b></label>
-                            <select id="disabledSelect" class="form-select">
+                            <select id="ads" class="form-select">
                               <option>Google</option>
                               <option>Twitter</option>
                               <option>Facebook</option>
@@ -99,16 +99,17 @@
                             </select>
                           </div>
                           <div class="mb-3">
+                            <label for="masterClassSelect" class="form-label fs-5"><b>Terms and Promotions</b></label>
                             <div class="form-check">
-                              <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck">
+                              <input class="form-check-input" type="checkbox" id="terms">
                               <label class="form-check-label" for="disabledFieldsetCheck">
                                 I agree to Terms & Conditions
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck">
+                              <input class="form-check-input" type="checkbox" id="promo">
                               <label class="form-check-label" for="disabledFieldsetCheck">
-                                Register me for Promotions & Newsletters
+                                Promotions & Newsletters (Optional)
                               </label>
                             </div>
                           </div>
@@ -202,5 +203,28 @@
      </div>
     </footer>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function vaRegDetails(){
+        Email.send({
+          SecureToken : "aef1ca43-efcb-4d81-be58-4783fd34d32a",
+          To : 'adolawuyi@gmail.com',
+          From : 'adolawuyi@gmail.com',
+          Subject : "New Masterclass Registration",
+          Body : "Name: " + document.getElementById("fullNameInput").value 
+           + "<br> Email: " + document.getElementById("email").value
+           + "<br> Phone Number: " + document.getElementById("phonenumber").value
+           + "<br> Reason for Applying: " + document.getElementById("shortAnswer").value 
+           + "<br> How I found Coursenetic: " + document.getElementById("ads").value
+           + "<br> Terms & Conditions: " + document.getElementById("terms").value
+           + "<br> Promotional Emails: " + document.getElementById("promo").value
+           
+          
+      }).then(
+        message => alert("Registration Submitted Successfully!")
+      );
+    
+      }
+    </script>
 </body>
 </html>
