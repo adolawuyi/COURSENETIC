@@ -209,7 +209,7 @@
         Email.send({
           SecureToken : "aef1ca43-efcb-4d81-be58-4783fd34d32a",
           To : 'coursenetic@gmail.com',
-          From : 'adolawuyi@gmail.com',
+          From : document.getElementById("email").value,
           Subject : "New Virtual Assistant Registration",
           Body : "Name: " + document.getElementById("fullNameInput").value 
            + "<br> Email: " + document.getElementById("email").value
