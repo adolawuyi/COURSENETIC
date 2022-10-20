@@ -1,20 +1,28 @@
 *{
     font-family: 'Figtree', sans-serif;
-
-   
-  
 }
 body{
     
     padding-top: 5%;
 }
+nav{
+    background-color: #3e526e;
+}
 .nav-item{
     overflow: hidden;
-    background-color: #3e526e;
    text-decoration: none;
 }
 .nav-item:hover{
-   background: #333;
+   background: #ee6c4d;
+}
+.btn{
+    background-color: #98c1d9 !important;
+    color: #3e526e !important;
+    border: #98c1d9 !important;
+}
+.btn:hover{
+    background: #ee6c4d !important;
+    color: #e0fbfc !important;
 }
 .masterhead{
     height: 600px;
@@ -33,7 +41,7 @@ body{
 }
 .masterfont0{
     margin: 50px;
-    color: #3e526e;
+    color: #3d5a80;
     font-size: 4rem;
     font-variant:normal;
     
@@ -42,20 +50,22 @@ body{
 .masterfont1{
     padding-left: 50px;
     font-size: 2rem;
-    color: #3e526e;
+    color: #ee6c4d;
     
 }
 .masterfont2{
     font-family: 'Comic Neue', cursive;
     padding-left: 50px;
     font-size: 1.2rem;
-    color: #3e526e;
+    color: #ee6c4d;
     text-transform: uppercase;
 }
 .masterfont3{
     font-family: 'Comic Neue', cursive;
     padding-left: 50px;
     font-variant: small-caps;
+    color: #3d5a80;
+    font-size: 1.5rem;
 }
 @media (max-width: 1024px){
 
@@ -76,6 +86,16 @@ body{
     }
     
 }
+@media(max-width: 789px) {
+    .coursenetic{
+        width: calc(20vw);
+        float: left !important;
+    }
+    .footer{
+       padding-left: 180px !important;
+    }
+    
+}
 
 .mid-work{
     height: 600px;
@@ -87,28 +107,54 @@ body{
     padding: 1%;
     text-shadow: rgba(0, 0, 0, 0.5);
 } 
-.head{
-    font-size: 3rem;
-   
-    
+.inner-bg{
+    margin-top: 5%;
+    padding: 1%;
+    background-position: right;
+    text-shadow: rgba(0, 0, 0, 0.9);
 }
+.head{
+    padding-left: 30px;
+    margin: 150px auto 25px;
+    position: relative;
+    line-height: 0px;
+    font-size: 2rem;
+    color: #ee6c4d;
+}
+
 .p-head{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-variant: small-caps;
-    color: #3e526e;
+    color: #293241;
 }
 
 .list-learn h4{
-    
-    color: #f00000;
+    color: #ee6c4d;
     font-variant: small-caps;
 }
 .list-learn p{
-    color: #333;
-    
+    color: #333; 
+}
+.list-learn span{
+    color: #ee6c4d;
 }
 .about-program{
     line-height: 27px;
+}
+.about-program ul{
+    list-style-type: circle;
+}
+.about-program h1, span{
+    color: #ee6c4d;
+}
+.get-started h1{
+    color: #ee6c4d;
+}
+.get-started h5{
+    color: #3d5a80;
+}
+.get-started a:hover{
+    color: #ee6c4d;
 }
 .mag{
     margin-top: 3%;
@@ -116,19 +162,48 @@ body{
 form a{
     text-decoration: none;
 }
+.testimonial h2{
+    color: #ee6c4d;
+}
+.testimonial p, q{
+    color: #3d5a80;
+}
+.faq h1{
+    color: #ee6c4d;
+}
+.faq p{
+    color: #3d5a80;
+}
+.faq button{
+    background-color: #98c1d9;
+}
+
+.newsletter h4{
+    font-variant: small-caps;
+    color: #ee6c4d;
+    font-weight: 800;
+}
 .footer{
     clear: both;
-    border-top: 1px solid #3e526e;
-    border-bottom: 10px solid #3e526e;
+    background-color: #3e526e;
+   
     display: inline-block;
     
 }
 .footer a{
     text-decoration: none;
 }
+.footer a:hover{
+    color: #fff;
+}
 .coursenetic {
     float: right;
 }
 .foot-text{
-    color: #3e526e;
+    color: #ee6c4d;
+    text-shadow: rgba(0, 0, 0, 0.5);
+    
 }
+
+
+ 
