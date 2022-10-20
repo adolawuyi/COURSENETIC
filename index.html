@@ -172,7 +172,7 @@
                                         </div>
                                         <div class="row my-5">
                                             <div class="col">
-                                                <select id="gender" class="form-select form-control" name="gender" required>
+                                                <select id="gender" class="form-control" name="gender" required>
                                                     <option selected>Gender...</option>
                                                     <option value="Male">Male</option>
                                                     <option value="Female">Female</option>
@@ -182,7 +182,7 @@
                                                 </select>
                                             </div>
                                             <div class="col">
-                                                <select id="course" name="course" class="form-select form-control" required>
+                                                <select id="course" name="course" class="form-control" required>
                                                     <option selected>Course...</option>
                                                     <option value="Virtual Assistant">Virtual Assistant</option>
                                                     <option value="Full-Stack Web Development">Full-Stack Web Development</option>
@@ -506,7 +506,9 @@
       form.addEventListener('submit', e => {
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => $("#form_alerts").html("<div class='alert alert-success'>Registration Submitted Successfully.</div>"))
+          .then(response => $("#form_alerts").html("<div class='alert alert-success'>Registration Submitted Successfully.</div>"),
+          $('input.form-control').val('')
+          )
           .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Registration Unsuccessful.</div>"))
 
         })
