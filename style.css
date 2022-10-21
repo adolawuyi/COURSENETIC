@@ -107,6 +107,13 @@ nav{
         padding-top: 30px;
         text-align: center;
     }
+    .about-program p{
+        text-align: center;
+    }
+    .masterfont1,.masterfont2, .masterfont3, .head, .about-program h1{
+        text-align: center;
+        padding-top: 15px;
+    }
     
 }
 
