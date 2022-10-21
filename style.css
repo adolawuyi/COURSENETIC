@@ -94,11 +94,18 @@ nav{
         width: calc(20vw);
         float: left !important;
     }
+    .foot-text{
+        font-size: small;
+    }
     .footer{
        padding-left: 180px !important;
     }
     .contactDetails{
         display: none;
+    }
+    .masterfont0{
+        padding-top: 30px;
+        text-align: center;
     }
     
 }
@@ -181,8 +188,17 @@ form a{
 .faq button{
     background-color: #98c1d9;
 }
+.faq span{
+    color: #293241;
+}
 
 .newsletter h4{
+    font-variant: small-caps;
+    color: #ee6c4d;
+    font-weight: 800;
+}
+.contactUs{
+    text-align: center;
     font-variant: small-caps;
     color: #ee6c4d;
     font-weight: 800;
@@ -208,6 +224,5 @@ form a{
     text-shadow: rgba(0, 0, 0, 0.5);
     
 }
-
 
  
