@@ -40,7 +40,8 @@ nav{
     background-size: cover;
 }
 .masterfont0{
-    margin: 50px;
+    margin-top: 40px;
+    padding: 20px;
     color: #3d5a80;
     font-size: 4rem;
     font-variant:normal;
@@ -48,21 +49,21 @@ nav{
     
 }
 .masterfont1{
-    padding-left: 50px;
+    padding-left: 30px;
     font-size: 2rem;
     color: #ee6c4d;
     
 }
 .masterfont2{
-    font-family: 'Comic Neue', cursive;
-    padding-left: 50px;
+   
+    padding-left: 30px;
     font-size: 1.2rem;
     color: #ee6c4d;
     text-transform: uppercase;
 }
 .masterfont3{
-    font-family: 'Comic Neue', cursive;
-    padding-left: 50px;
+    
+    padding-left: 30px;
     font-variant: small-caps;
     color: #3d5a80;
     font-size: 1.5rem;
@@ -88,6 +89,36 @@ nav{
         font-size: calc(1 * 3.3vw);
     }
     
+    
+}
+@media(max-width: 1180px) {
+    .coursenetic{
+        width: calc(20vw);
+        float: left !important;
+    }
+    .foot-text{
+        font-size: small;
+    }
+    .footer{
+       padding-left: 180px !important;
+    }
+   
+    .masterfont0{
+        padding-top: 30px;
+       /*  text-align: center; */
+    }
+    .masterhead{
+        margin: 10px;
+    }
+    .inner-bg{
+        margin-top: 100px !important;
+    }
+    .head{
+        
+        padding-left: 15px;
+    }
+   
+    
 }
 @media(max-width: 789px) {
     .coursenetic{
@@ -105,9 +136,14 @@ nav{
     }
     .masterfont0{
         padding-top: 30px;
-        text-align: center;
+       /*  text-align: center; */
     }
-    
+    .head{
+        padding-left: 15px;
+    }
+    .btnabout{
+        padding-left: 40px;
+    }
     
 }
 
