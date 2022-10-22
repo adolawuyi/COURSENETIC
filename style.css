@@ -83,6 +83,9 @@ nav{
     .masterbody{
         background-image: none;
     }
+    .about-program{
+        background-image: none;
+    }
     .masterfont0{
         font-size: calc(3 * 3.3vw);
     }
