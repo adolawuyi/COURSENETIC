@@ -32,6 +32,13 @@ nav{
     background-size:auto;
     background-position: right;
 }
+
+.about-program{
+    background-image: url('./images/innerbg.png');
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: right;
+}
 .masterbody{
     height: 600px;
     width: 100%;
